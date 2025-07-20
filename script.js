@@ -1,7 +1,7 @@
 // Animated flower tiling over full viewport
 
 const patternURL = 'images/flower_pattern.png'; // your filled and transparent PNG
-const FLOWER_SIZE = 140; // px - adjust to taste
+const FLOWER_SIZE = window.innerWidth < 600 ? 220 : 140; // Fewer flowers on mobile
 const ROTATE_SPEED = 0.2; // radians per second
 
 function createFlowerTile(x, y, size, initialAngle) {
